@@ -1,0 +1,124 @@
+@font-face {
+    font-family:SpecialElite-Regular;
+    src: url(assets/Fonts/SpecialElite-Regular.ttf);
+}
+@font-face {
+    font-family: "Montserrat-VariableFont_wght.ttf";
+    src: url(./assets//Fonts/Montserrat-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:aliceblue;
+
+}
+#grand_parent_div{
+    display: flex;
+}
+#nav_parent_div{
+    position:fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: #a30f0f;
+    border-radius: 8px;
+    z-index: 10;
+}
+
+#h1{
+    font-family: SpecialElite-Regular;    
+    color: rgb(36, 2, 2);
+    font-size: 4rem;
+    text-shadow: 2px 2px 5px #a30f0f; 
+
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-family: "Montserrat-VariableFont_wght.ttf";
+    font-size: 20px;
+    font-weight:500;
+    padding: 20px;
+}
+#logo{
+    padding:10px;
+    width: 59px;
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+#p1{
+    font-family: "SpecialElite-Regular";
+    font-size: 1.4em;
+}
+.child2{
+   width:  400px;
+}
+.text{
+    font-family: "Montserrat-VariableFont_wght.ttf";
+    font-size: 1.4em;
+}
+.nav-links a:hover{
+    color: #130546;
+}
+.main_timeline_div{
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+.timeline{
+    box-shadow: 0 0 20px black;
+    border-radius: 8px;
+    width: 48%;
+    padding: 20px;
+}
+.img{
+    width: 100%;
+    object-fit:fill;
+    border-radius: 8px;
+}
+.timeline:nth-child(odd){
+    clear: right;
+    background-color: #960707;
+    color: white;
+}
+.timeline:nth-child(even){
+    float: right;
+    clear: left;
+    background-color: #0a0c0b;
+    color: white;
+}
+.timeline-content{
+    display: flex;
+    gap: 20px;
+}
+.timeline-content .img {
+    flex: 1;
+}
+.timeline-content .img img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 8px;
+}
+.timeline-content .text {
+    flex: 2;
+}
+.timeline:hover{
+    cursor:none;
+    transform: scale(1.2);
+  box-shadow: 0 0 80px #000000;
+}
