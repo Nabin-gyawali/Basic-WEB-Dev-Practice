@@ -10,23 +10,26 @@
   <body>
     <div id="nav_parent_div">
       <!-- <nav class="navbar"> -->
-      <div>
+      <div id="img">
         <img
           id="logo"
           src="./assets/images/arc_reactor-removebg-preview.png"
           alt="Logo"
         />
       </div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#main_timeline_div">Biography</a></li>
-          <li><a href="#quotes_main_container">Quotes</a></li>
-          <li><a href="#">Quiz</a></li>
-        </ul>
+      <div id="Grand_div">
+        <div>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#main_timeline_div">Biography</a></li>
+            <li><a href="#quotes_main_container">Quotes</a></li>
+            <li><a href="#">Quiz</a></li>
+          </ul>
+        </div>
       </div>
       <!-- </nav> -->
     </div>
+
     <div class="parent">
       <div class="child2">
         <h1 id="h1">Iron Man</h1>
@@ -39,12 +42,11 @@
           wrench in one hand and sheer brilliance in the other.
         </p>
       </div>
-
       <div class="child1">
         <img
           src="./assets/images/Free-download-Iron-Man-Wallpaper-HD-removebg-preview.png"
           alt="Tony_Stark"
-          id="img"
+          id="img1"
         />
       </div>
     </div>
@@ -225,18 +227,18 @@
 
     <div class="quotes_main_container" id="quotes_main_container">
       <h1>Quotes</h1>
-      <div class="Quotes_card">
-          <div class="Quotes">
-              <p id="quote-display">Click the button to get a quote!</p> 
-              
+      <button id="quote-btn">
+        <div class="Quotes_card">
+          <div>
+            <img class="oscar_img" src="./assets/images/iron_man.png" alt="" />
           </div>
-      </div>
-      <div class="js_input">
-        <button id="quote-btn">Click Here..</button> 
+          <div class="Quotes">
+            <p id="quote-display">Click the Card to get a quote!</p>
+          </div>
+        </div>
+      </button>
     </div>
-  </div>
- 
-  <script src="Script.js"></script>  
 
+    <script src="Script.js"></script>
   </body>
 </html>
